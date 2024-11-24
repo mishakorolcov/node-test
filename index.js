@@ -3,7 +3,7 @@ const app = express();
 
 // Створюємо маршрут для головної сторінки
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    res.status(200).json({message: "1111"});
 });
 
 // Запускаємо сервер на порту 3000
